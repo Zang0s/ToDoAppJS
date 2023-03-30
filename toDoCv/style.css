@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #9fa298;
+}
+
+.container {
+    height: 70vh;
+    font-size: 16px;
+    color: #fff;
+    width: 60vw;
+    padding: 3em 1.8em;
+    background-color: #43404a;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0,0,0,0.2);
+}
+
+.screen {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.task-module {
+    background-color: #372d54;
+    padding: 2%;
+    overflow-y: auto;
+    border-radius: 1em 0 0 1em;
+    text-align: center;
+}
+
+.task-add {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-add input {
+    color: #fff;
+    width: 70%;
+    background: transparent;
+    border: 2px solid #a0a0a0;
+    border-radius: 0.3em;
+    height: 5vh;
+    font-size: 0.9em;
+    outline: none;
+    padding: 0 0.3em;
+}
+
+.task-add input:focus {
+    border-color: #fff;
+}
+
+.task-add button {
+    width: 28%;
+    height: 5vh;
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+    border: none;
+    cursor: pointer;
+    background-color: #a0a0a0;
+}
+
+.task-add button:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+    background-color: #FFF;
+}
+
+.to-do {
+    background-color: #f0ffff;
+    color: #000;
+    border-radius: 0 1em 1em 0;
+    padding: 2%;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.todo-item {
+    width: 99%;
+    display: flex;
+    height: 5vh;
+    border-radius: 0.3em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9fa298;
+    padding: .3em;
+    margin-bottom: 5px;
+}
+
+.todo-item span {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.todo-item input[type=checkbox] {
+    accent-color: lime;
+}
+
+.todo-item a {
+    color: #555;
+    width: 30px;
+    height: 30px;
+}
+
+.todo-item a svg {
+    pointer-events: none;
+    height: 100%;
+}
+
+.completed-todos .todo-item {
+    background-color: #74c674;
+    text-decoration: line-through;
+    color: black;
+}
+
+.completed-title {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
